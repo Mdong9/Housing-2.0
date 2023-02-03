@@ -1,7 +1,7 @@
 import json
 from ideal_search import ideal_search
-import best_search
-import ideal_split_search
+from best_search import best_search 
+from ideal_split_search import ideal_split_search 
 
 
 if __name__ == "__main__":

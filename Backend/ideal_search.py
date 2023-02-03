@@ -20,8 +20,8 @@ def ideal_search (group_Size, list_Of_Pref, campus_Data):
     buildingPref = list_Of_Pref[0]
     floorPref = list_Of_Pref[1]
     studentYear = list_Of_Pref[2]
-    # Room number will be used as keys 
-    roomNum = 0        
+    # Room number count number of rooms available
+    roomNum = 1       
     # Store access to check rooms of building
     access_Key = campus_Data[buildingPref][floorPref]
     # Now we can look though the campus_Data and available rooms 
@@ -33,13 +33,14 @@ def ideal_search (group_Size, list_Of_Pref, campus_Data):
         # Get the amount of people in current room: 
         people_In_Room = len(access_Key[room]["Occupants"])
         
+        # Checking to see if group can fit inside room, if yes they add to dictionary
         if(match_group_size(people_In_Room, group_Size, access_Key[room]["size"])):
-            recommended_Rooms[roomNum] = room
+            recommended_Rooms[roomNum] = access_Key[room]
 
         roomNum += 1
     return recommended_Rooms
 
-# Function to check if group size can fit in room
+# Function to check if group size can fit in room (Used this for readability)
 def match_group_size (num_Occupants, group_Size, room_Size):
     if (num_Occupants == 0 and (int(group_Size) <= int(room_Size))): 
         return True
