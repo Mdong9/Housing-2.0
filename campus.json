@@ -1,0 +1,81 @@
+{
+  "Warren" : {
+    "floor1" : {
+      "room1":{
+        "id": 104,
+        "size": 2,
+        "shared_bathroom": false,
+        "type" : "freshman",
+        "Occupants": []
+      },
+    
+      "room2": {
+          "id":105,
+          "size": 2,
+          "shared_bathroom": 106,
+          "type" : "junior",
+          "Occupants": []
+      },
+
+      "room3":{
+        "id":105,
+        "size":2,
+        "shared_bathroom": 105,
+        "type" : "junior",
+        "Occupants": []
+      }
+    },                                       
+    "floor2" : {
+      "room1":{
+        "id": 204,
+        "size": 2,
+        "shared_bathroom": false,
+        "type" : "freshman",
+        "Occupants": []
+      },
+
+      "room2": {
+        "id": 205,
+        "size": 2,
+        "shared_bathroom": false,
+        "type" : "freshman",
+        "Occupants": []
+      },
+    
+      "room3":{
+        "id":206,
+        "size":2,
+        "shared_bathroom": 106,
+        "type" : "junior",
+        "Occupants": []
+      },
+
+      "room4":{
+        "id": 207,
+        "size":2,
+        "shared_bathroom": 105,
+        "type" : "junior",
+        "Occupants": []
+      }
+    }
+  },
+  "Hall" :{
+    "floor1" : {
+      "room1":{
+        "id": 104,
+        "size": 2,
+        "shared_bathroom": false,
+        "type" : "freshman",
+        "Occupants": []
+      },
+    
+      "room2":{
+          "id":105,
+          "size":2,
+          "shared_bathroom": false,
+          "type" : "junior",
+          "Occupants": []
+      }
+    }
+  }
+}
